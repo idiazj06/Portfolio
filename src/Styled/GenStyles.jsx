@@ -5,22 +5,21 @@ const HeaderStyle = styled.div`
     background:#343a40;
     padding:40px;
     // display:grid;
+    overflow-y:hidden;
 
-    background: ${props => props.proyectos ? "white" : "343a40"};
+    background: ${props => props.proyectos ? "#FFFFFE" : "343a40"};
+    max-height: ${props => props.proyectos ? "250vh" : "100vh"};
+    
 `;
 const TituloStyle = styled.h2`
     font-family: Nunito;
     font-style: normal;
-    font-weight: bold;
-    font-size: 64px;
     line-height: 80px;
-    color: #FFFFFE;
 
-    font-family: ${props => props.titulo ? "Lora" : "Nunito"};
-    font-weight: ${props => props.titulo ? "normal" : "bold"};
-    font-size: ${props => props.titulo ? "32px" : "64px"};
-    line-height: ${props => props.titulo ? "40px" : "80px"};
-    color: ${props => props.titulo ? "#0F0E17" : "#FFFFFE"};
+    font-size: ${props => props.titulocard ? "48px" : "64px"};
+    color: ${props => props.titulocard ? "#0F0E17" : "#FFFFFE"};
+    letter-spacing: ${props => props.titulocard ? "-0.005em" : "0.01em"};
+    width: ${props => props.titulocard ? "35%" : "100%"};
 `;
 
 const SubTituloStyle = styled.p`
@@ -30,10 +29,12 @@ const SubTituloStyle = styled.p`
     font-size: 24px;
     line-height: 40px;
     color: #A7A9BE;
+    padding-bottom:50px;
     
-    font-size: ${props => props.subtitulo ? "20px" : "24px"};
-    line-height: ${props => props.subtitulo ? "32px" : "40px"};
-    color: ${props => props.subtitulo ? "#0F0E17" : "#A7A9BE"};
+    color: ${props => props.subtitulocard ? "#0F0E17" : "#A7A9BE"};
+    letter-spacing: ${props => props.subtitulocard ? "-0.005em" : "0.01em"};
+    width: ${props => props.subtitulocard ? "35%" : "100%"};
+    margin-top: ${props => props.subtitulocard ? "20px" : "0"};
 `;
 
 const ArrowStyle = styled.p`
@@ -41,7 +42,18 @@ const ArrowStyle = styled.p`
     margin-top:150px;
 `;
 
+const FlexStyle = styled.div`
+    display:flex;
+    justify-content:space-evenly;
+    align-items:start;
+    flex-wrap:wrap; 
+`;
+
+
+
 export const HeaderS =  HeaderStyle
 export const TituloS =  TituloStyle
 export const SubTituloS =  SubTituloStyle
 export const ArrowS =  ArrowStyle
+export const FlexS =  FlexStyle
+
