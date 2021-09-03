@@ -4,7 +4,9 @@ const HeaderStyle = styled.div`
     width:100vw;
     background:#343a40;
     padding:40px;
-    display:grid;
+    // display:grid;
+
+    background: ${props => props.proyectos ? "white" : "343a40"};
 `;
 const TituloStyle = styled.h2`
     font-family: Nunito;
@@ -13,6 +15,12 @@ const TituloStyle = styled.h2`
     font-size: 64px;
     line-height: 80px;
     color: #FFFFFE;
+
+    font-family: ${props => props.titulo ? "Lora" : "Nunito"};
+    font-weight: ${props => props.titulo ? "normal" : "bold"};
+    font-size: ${props => props.titulo ? "32px" : "64px"};
+    line-height: ${props => props.titulo ? "40px" : "80px"};
+    color: ${props => props.titulo ? "#0F0E17" : "#FFFFFE"};
 `;
 
 const SubTituloStyle = styled.p`
@@ -22,6 +30,10 @@ const SubTituloStyle = styled.p`
     font-size: 24px;
     line-height: 40px;
     color: #A7A9BE;
+    
+    font-size: ${props => props.subtitulo ? "20px" : "24px"};
+    line-height: ${props => props.subtitulo ? "32px" : "40px"};
+    color: ${props => props.subtitulo ? "#0F0E17" : "#A7A9BE"};
 `;
 
 const ArrowStyle = styled.p`
