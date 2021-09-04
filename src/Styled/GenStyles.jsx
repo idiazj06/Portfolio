@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 const HeaderStyle = styled.div`
-    width:100vw;
     background:#343a40;
     padding:40px;
     overflow-y:hidden;
@@ -20,6 +19,8 @@ const TituloStyle = styled.h2`
     color: ${props => props.titulocard ? "#0F0E17" : "#FFFFFE"};
     letter-spacing: ${props => props.titulocard ? "-0.005em" : "0.01em"};
 `;
+
+
 
 const SubTituloStyle = styled.p`
     font-family: Lora;
@@ -50,6 +51,7 @@ const DivFlexCenterStyle = styled.div`
     
 
     flex-direction: ${props => props.flexcomun ? "column" : ""};
+    justify-content: ${props => props.flexcomun ? "" : "center"};
 `;
 
 const ButtonStyle = styled.button`
@@ -67,9 +69,12 @@ const ButtonStyle = styled.button`
     color: #0F0E17;
 `;
 
-const DivServiciosStyle = styled.div`
+const SeccionStyle = styled.div`
    background: linear-gradient(135deg, #FEB692 0%, #EA5455 100%);
    padding:50px 40px;
+
+   background: ${props => props.darktheme ? "#343a40" : "linear-gradient(135deg, #FEB692 0%, #EA5455 100%)"};
+   
    
    
 `;
@@ -114,6 +119,101 @@ const ButtonServStyle = styled.button`
     margin-top:30px;
 `;
 
+const ImgTestimonioStyle = styled.img`
+width: 48px;
+height: 48px;
+border-radius:100%;
+`
+
+const HeaderCardStyle = styled.div`
+width:100%;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #F25F4C;
+
+
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:20px 0;
+
+`;
+
+const HeaderCardSpanStyle = styled(HeaderCardStyle)`
+    margin-left:10px;
+`;
+const BodyCardStyle = styled.div`
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    color: #FFFFFE;
+`;
+
+const TituloTestimonioStyle = styled.h2`
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.005em;
+    color: #FFFFFE;
+`;
+
+const FormularioStyle = styled.form`
+    display:flex;
+    flex-direction: column;    
+    width:40%;
+    background:#343a40;
+    padding:30px;
+    font-family: Lora;
+
+`;
+
+const InputFormularioStyle = styled.input`
+    padding:5px 10px;
+    margin-bottom:10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    color: #0F0E17;
+`;
+const TextareaStyle = styled.textarea`
+    padding:5px 10px;
+    margin-bottom:10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    color: #0F0E17;
+`;
+const BtnSubmitStyle = styled.input`
+    background: #FF8906;
+    border:none;
+    padding:10px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFE;
+`;
+
+const SpanFormularioStyle = styled.p`
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: #A7A9BE;
+    padding:20px 0;
+`;
 
 
 
@@ -124,9 +224,19 @@ export const SubTituloS = SubTituloStyle
 export const ArrowS = ArrowStyle
 export const ButtonS = ButtonStyle
 export const DivFlexCenterS = DivFlexCenterStyle
-export const DivServiciosS = DivServiciosStyle
+export const SeccionS = SeccionStyle
 export const ListItemsS = ListItemsStyle
 export const ListS = ListStyle
 export const ListItemTitlesS = ListItemTitlesStyle
 export const ListItemSubtitlesS = ListItemSubtitlesStyle
 export const ButtonServS = ButtonServStyle
+export const ImgTestimonioS = ImgTestimonioStyle
+export const HeaderCardS = HeaderCardStyle
+export const BodyCardS = BodyCardStyle
+export const TituloTestimonioS = TituloTestimonioStyle
+export const HeaderCardSpanS = HeaderCardSpanStyle
+export const FormularioS = FormularioStyle
+export const InputFormularioS = InputFormularioStyle
+export const TextareaS = TextareaStyle
+export const BtnSubmitS = BtnSubmitStyle
+export const SpanFormularioS = SpanFormularioStyle

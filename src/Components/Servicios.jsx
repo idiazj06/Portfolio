@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import * as ReactBootStrap from "react-bootstrap"
-import { DivServiciosS, DivFlexCenterS, ListItemsS, ListS, ListItemTitlesS, ListItemSubtitlesS, ButtonServS} from '../Styled/GenStyles'
+import { SeccionS, DivFlexCenterS, ListItemsS, ListS, ListItemTitlesS, ListItemSubtitlesS, ButtonServS} from '../Styled/GenStyles'
 import { BsArrowRightShort } from "react-icons/bs";
 
 export default class Servicios extends Component {
     render() {
         return (
-            <DivServiciosS>
+            <SeccionS>
                 <h1>Servicios</h1>
 
                 <ReactBootStrap.Row className="flex d-flex justify-content-center">
@@ -52,7 +52,7 @@ export default class Servicios extends Component {
 
                     </ReactBootStrap.Col>
                 </ReactBootStrap.Row>
-            </DivServiciosS>
+            </SeccionS>
         )
     }
 }
