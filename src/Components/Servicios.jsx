@@ -16,6 +16,7 @@ export default class Servicios extends Component {
                                     <ListS ListS >
                                         <ListItemTitlesS>Diseño</ListItemTitlesS>
                                         <ListItemSubtitlesS>Experiencia de usuario</ListItemSubtitlesS>
+                                        <ListItemSubtitlesS> Interfaz de usuario</ListItemSubtitlesS>
                                         <ListItemSubtitlesS>Aplicaciones web</ListItemSubtitlesS>
                                         <ListItemSubtitlesS>Prueba de concepto</ListItemSubtitlesS>
                                         <ButtonServS>Ver servicios de diseño <BsArrowRightShort size={35}/></ButtonServS>

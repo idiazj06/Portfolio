@@ -6,6 +6,7 @@ import Servicios from '../Components/Servicios'
 import Testimonios from '../Components/Testimonios'
 import SeccionImg from '../Components/SeccionImg'
 import FormContatco from '../Components/FormContatco'
+import Footer from '../Components/Footer'
 
 
 
@@ -20,6 +21,7 @@ export default class ListContainer extends Component {
                <Testimonios/>
                <SeccionImg/>
                <FormContatco/>
+               <Footer/>
             </>
         )
     }

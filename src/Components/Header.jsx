@@ -11,7 +11,7 @@ export default class Header extends Component {
                     <ReactBootStrap.Row>
                         <ReactBootStrap.Col xs={12} md={6}>
                             <TituloS>¡Hola a todos!
-                                Soy Antonio Pereira</TituloS>
+                                Soy Ilan Diaz</TituloS>
                             <SubTituloS>Developer que le encanta implementar diseños que
                                 inspiran y atraen a las personas.</SubTituloS>
                                 <ArrowS><BsArrowDownShort size={70}/></ArrowS>

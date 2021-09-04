@@ -10,7 +10,7 @@ const HeaderStyle = styled.div`
     
 `;
 const TituloStyle = styled.h2`
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-style: normal;
     line-height: 80px;
     width:100%;
@@ -23,7 +23,7 @@ const TituloStyle = styled.h2`
 
 
 const SubTituloStyle = styled.p`
-    font-family: Lora;
+    font-family: 'Lora', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -61,7 +61,7 @@ const ButtonStyle = styled.button`
     background:transparent;
     border: 2px solid #0F0E17;
     box-sizing: border-box
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -81,7 +81,7 @@ const SeccionStyle = styled.div`
 
 const ListItemsStyle = styled.li`
     list-style:none;
-    font-family: Lora;
+    font-family: 'Lora', serif;
     font-style: normal;
     font-weight: normal;
     color: #0F0E17;
@@ -109,7 +109,7 @@ const ButtonServStyle = styled.button`
     width: 268px;
     height: 48px;
     background: #0F0E17;
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -127,7 +127,7 @@ border-radius:100%;
 
 const HeaderCardStyle = styled.div`
 width:100%;
-    font-family: Lora;
+    font-family: 'Lora', serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -146,7 +146,7 @@ const HeaderCardSpanStyle = styled(HeaderCardStyle)`
     margin-left:10px;
 `;
 const BodyCardStyle = styled.div`
-    font-family: Lora;
+    font-family: 'Lora', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -155,7 +155,7 @@ const BodyCardStyle = styled.div`
 `;
 
 const TituloTestimonioStyle = styled.h2`
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -167,10 +167,10 @@ const TituloTestimonioStyle = styled.h2`
 const FormularioStyle = styled.form`
     display:flex;
     flex-direction: column;    
-    width:40%;
+    width:100%;
     background:#343a40;
     padding:30px;
-    font-family: Lora;
+    font-family: 'Lora', serif;
 
 `;
 
@@ -196,7 +196,7 @@ const BtnSubmitStyle = styled.input`
     background: #FF8906;
     border:none;
     padding:10px;
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -206,13 +206,54 @@ const BtnSubmitStyle = styled.input`
 `;
 
 const SpanFormularioStyle = styled.p`
-    font-family: Lora;
+    font-family: 'Lora', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 32px;
     color: #A7A9BE;
     padding:20px 0;
+`;
+
+const ContenedorFooterStyle = styled.div`
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    text-align:center;
+`;
+
+const TextCopyrightStyle = styled.span`
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    // text-align: center;
+    color: #FFFFFE;
+`;
+
+const LogosStyle = styled.span`
+    padding:5px;
+    color: #FFFFFE;
+`;
+const SocialLogosStyle = styled.span`
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    // text-align: center;
+    color: #FFFFFE;
+`;
+
+const DivsContFooterStyle = styled.div`
+    width:calc(100/3);
+`;
+
+const FooterStyle = styled.div`
+   width:100%;
+   background: #343a40;
+   padding:30px 20px;  
 `;
 
 
@@ -240,3 +281,8 @@ export const InputFormularioS = InputFormularioStyle
 export const TextareaS = TextareaStyle
 export const BtnSubmitS = BtnSubmitStyle
 export const SpanFormularioS = SpanFormularioStyle
+export const ContenedorFooterS = ContenedorFooterStyle
+export const TextCopyrightS = TextCopyrightStyle
+export const LogosS = LogosStyle
+export const DivsContFooterS = DivsContFooterStyle
+export const FooterS = FooterStyle
