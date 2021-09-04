@@ -235,6 +235,7 @@ const TextCopyrightStyle = styled.span`
 const LogosStyle = styled.span`
     padding:5px;
     color: #FFFFFE;
+    font-size:24px;
 `;
 const SocialLogosStyle = styled.span`
     font-family: 'Lora', serif;
@@ -253,7 +254,8 @@ const DivsContFooterStyle = styled.div`
 const FooterStyle = styled.div`
    width:100%;
    background: #343a40;
-   padding:30px 20px;  
+   padding:30px 20px;
+   text-align:center;  
 `;
 
 

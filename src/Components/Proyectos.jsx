@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import * as ReactBootStrap from "react-bootstrap"
-import { HeaderS, TituloS, SubTituloS, ButtonS, DivFlexCenterS } from '../Styled/GenStyles'
+import { HeaderS, TituloS, SubTituloS, ButtonS, DivFlexCenterS,BtnSubmitS } from '../Styled/GenStyles'
 import { BsArrowRightShort } from "react-icons/bs";
 
 export default class Proyectos extends Component {
@@ -28,7 +28,7 @@ export default class Proyectos extends Component {
                                 <ReactBootStrap.Card.Text className="text-light">
                                     Niko es una de las marcas y proveedores de equipamiento deportivo más  reconocidas y valiosas en todo el mundo.
                                 </ReactBootStrap.Card.Text>
-                                <ReactBootStrap.Button className="m-2 p-2 text-white" variant="warning">Ver proyecto completo</ReactBootStrap.Button>
+                                <BtnSubmitS type="button" value="Ver proyecto completo" />
                                 <ReactBootStrap.Button className="m-2 p-2" variant="outline-warning">Ver código</ReactBootStrap.Button>
                             </ReactBootStrap.Card.Body>
                         </ReactBootStrap.Card>
@@ -43,7 +43,7 @@ export default class Proyectos extends Component {
                                 <ReactBootStrap.Card.Text className="text-light">
                                     Niko es una de las marcas y proveedores de equipamiento deportivo más  reconocidas y valiosas en todo el mundo.
                                 </ReactBootStrap.Card.Text>
-                                <ReactBootStrap.Button className="m-2 p-2 text-white" variant="warning">Ver proyecto completo</ReactBootStrap.Button>
+                                <BtnSubmitS type="button" value="Ver proyecto completo" />
                                 <ReactBootStrap.Button className="m-2 p-2" variant="outline-warning">Ver código</ReactBootStrap.Button>
                             </ReactBootStrap.Card.Body>
                         </ReactBootStrap.Card>
@@ -57,7 +57,7 @@ export default class Proyectos extends Component {
                                 <ReactBootStrap.Card.Text className="text-light">
                                     Niko es una de las marcas y proveedores de equipamiento deportivo más  reconocidas y valiosas en todo el mundo.
                                 </ReactBootStrap.Card.Text>
-                                <ReactBootStrap.Button className="m-2 p-2 text-white" variant="warning">Ver proyecto completo</ReactBootStrap.Button>
+                                <BtnSubmitS type="button" value="Ver proyecto completo" />
                                 <ReactBootStrap.Button className="m-2 p-2" variant="outline-warning">Ver código</ReactBootStrap.Button>
                             </ReactBootStrap.Card.Body>
                         </ReactBootStrap.Card>
