@@ -46,8 +46,10 @@ const ArrowStyle = styled.p`
 const DivFlexCenterStyle = styled.div`
     width:100%;
     display:flex;
-    justify-content:center;
     align-items:center;
+    
+
+    flex-direction: ${props => props.flexcomun ? "column" : ""};
 `;
 
 const ButtonStyle = styled.button`
@@ -65,6 +67,55 @@ const ButtonStyle = styled.button`
     color: #0F0E17;
 `;
 
+const DivServiciosStyle = styled.div`
+   background: linear-gradient(135deg, #FEB692 0%, #EA5455 100%);
+   padding:50px 40px;
+   
+   
+`;
+
+const ListItemsStyle = styled.li`
+    list-style:none;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    color: #0F0E17;
+`;
+
+const ListItemTitlesStyle = styled(ListItemsStyle)`
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+`;
+const ListItemSubtitlesStyle = styled(ListItemsStyle)`
+    font-size: 24px;
+    line-height: 40px;
+`;
+
+
+const ListStyle = styled.ul`
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:start;
+`;
+
+const ButtonServStyle = styled.button`
+    width: 268px;
+    height: 48px;
+    background: #0F0E17;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FF8906;
+    border:none;
+    margin-top:30px;
+`;
+
+
+
 
 
 export const HeaderS = HeaderStyle
@@ -73,4 +124,9 @@ export const SubTituloS = SubTituloStyle
 export const ArrowS = ArrowStyle
 export const ButtonS = ButtonStyle
 export const DivFlexCenterS = DivFlexCenterStyle
-
+export const DivServiciosS = DivServiciosStyle
+export const ListItemsS = ListItemsStyle
+export const ListS = ListStyle
+export const ListItemTitlesS = ListItemTitlesStyle
+export const ListItemSubtitlesS = ListItemSubtitlesStyle
+export const ButtonServS = ButtonServStyle
